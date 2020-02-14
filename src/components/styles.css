@@ -1,0 +1,128 @@
+
+@keyframes criss-cross-left {
+    0% {
+      left: -20px;
+    }
+    50% {
+      left: 50%;
+      width: 20px;
+      height: 20px;
+    }
+    100% {
+      left: 50%;
+      width: 400px;
+      height: 400px;
+    }
+  }
+  
+  @keyframes criss-cross-right {
+    0% {
+      right: -20px;
+    }
+    50% {
+      right: 50%;
+      width: 20px;
+      height: 20px;
+    }
+    100% {
+      right: 50%;
+      width: 400px;
+      height: 400px;
+    }
+  }
+  
+  .btn-2 a:before,
+  .btn-2 a:after,
+  .btn-1:before, 
+  .btn-1:after {
+    position: absolute;
+    top: 50%;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #323232;
+    border-radius: 50%;
+  }
+  .btn-2 a:before,
+  .btn-1:before {
+    left: -20px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .btn-2 a:after,
+  .btn-1:after {
+    right: -20px;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+  }
+  .btn-2 a span,
+  .btn-1 span{
+      position: relative;
+      z-index: 1;
+      font-weight: 700;
+  }
+  .btn-2 a:hover:before,
+  .btn-1:hover:before {
+    -webkit-animation: criss-cross-left 0.8s both;
+            animation: criss-cross-left 0.8s both;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+  }
+  .btn-2 a:hover:after ,
+  .btn-1:hover:after {
+    -webkit-animation: criss-cross-right 0.8s both;
+            animation: criss-cross-right 0.8s both;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+  }
+  .btn-1:hover{
+      color: #ffffff;
+  }
+.btn-1{
+    height: 30px;
+    width: 40px;
+}  
+
+
+
+/* Footer */
+.footerOuter{
+height: 500px;
+position: absolute;
+z-index: -2;
+
+}
+#location{
+  background-image: url('./assets/images/navigation.png');
+  background-position: 6px;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  padding:2px 0px 0px 25px ; 
+}
+/* .nopad{
+  margin: 0px;
+  padding: 0px;
+}
+.padding{
+  padding: 0px;
+  margin: 0px;
+}
+.search{
+  background-color: #ffffff;
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+}
+.search .padding {
+  padding: 0px 5px 0px 0px;
+}
+.search .padding:last-child {
+  padding: 0px;
+}
+.search button.btn-1 {
+  padding: 8px 0px;
+  border-radius: 0px;
+  color: #ffffff;
+  border: none;
+  transition: all 400ms ease-in-out;
+} */
