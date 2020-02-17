@@ -461,6 +461,20 @@ a.btn-1:hover{
   transition: all 400ms ease-in-out;
   text-transform: uppercase; 
 }
+.lookingFor{
+  background-color: white !important;
+  /* color: #323232 !important; */
+  color: '#232222' !important;
+ 
+}
+.text-uppercase{
+  text-transform: uppercase;
+}
+.lookingTo{
+  background-color: #337ab7;
+  color: white !important;
+  border: white 1px solid !important;
+}
 .index {
   z-index: 2;
   position: relative;
@@ -979,4 +993,144 @@ footer {
 
 body, button, input, select, textarea, code, kbd, pre, samp, .font-ar, .ui-accordion .ui-accordion-header {
   font-family: 'Sintony', sans-serif;
+}
+
+
+.secondHeader{
+  background-color: #337ab7 !important;
+}
+.secondBtn{
+  /* color: white !important; */
+  color: #ffffff !important;
+  padding: 40px 0px;
+  font-weight: 400;
+    transition: all 400ms ease-in-out;
+}
+.secondBtn:hover{
+  color: #323232 !important;
+
+}
+
+.header-right .btn-3 a{
+  background-color: #4ea94f !important;
+}
+.header-right .btn-3 a:hover{
+  color: #ffffff;
+}
+
+.header-right{
+  float: right;
+  margin: 10px 15px 0px 0px !important;
+  font-family: 'Sintony', sans-serif;
+  font-size: 15px;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
+}
+.header-right ul li {
+  list-style-type: none;
+  float: left;
+}
+.header-right ul li {
+  float: left;
+  margin: 15px 0px 0px 0px;
+}
+.header-right ul li.btn-3 {
+  padding: 0px;
+  background-color: transparent;
+  margin:0px 0px 0px 15px ;
+}
+.header-right ul li.btn-3 a {
+  padding: 15px 30px;
+  color: #ffffff;
+}
+
+.header-right .btn-3 a{
+  background-color: #4ea94f;
+}
+.header-right .btn-3 a:hover{
+  color: #ffffff;
+}
+  /* .header-right{
+    margin: 21px 0px 0px 0px;
+  } */
+.header-right li a {
+  color: #ffffff;
+  padding: 40px 10px;
+  text-decoration: none;
+    transition: all 400ms ease-in-out;
+}
+.header-right li a:hover {
+  color: #323232;
+  padding: 40px 10px;
+  text-decoration: none;
+    transition: all 400ms ease-in-out;
+}
+
+/** ================================================ 
+## Search Bar
+===================================================*/
+
+/* 
+.search-bar{
+  display: flex;
+  flex-direction: row;
+} */
+.search-bar.section-padding.no-border{
+  border-bottom: none;
+}
+
+.search-bar.section-padding {
+  padding: 110px 40px 15px;
+  border-bottom: 1px solid #d2d2d2;
+}
+.search-bar #location,
+.right-search li select,
+.property-grids-filter ul.filter select{
+  border: 0px;
+  outline: 0;
+  margin-top: 5px;
+}
+
+.right-search li{
+  margin-right: 6px;
+}
+.right-search li:first-child {
+  width: 35%;
+  float: left;
+  margin-left: 0px;
+
+}
+.right-search li #location{
+  background-position: 0px;
+}
+.right-search li:last-child{
+  width: 15%;
+  margin-right: 0px
+}
+.right-search li select{
+  padding:0px;
+}
+.right-search li{
+  display: inline-block;
+  margin-left: 11px;
+}
+.right-search button.btn-1{
+  padding:13px 15px 12px;
+  color: #ffffff;
+}
+.right-search button.btn-1:hover:before,
+.right-search button.btn-1:hover:after{
+  background-color: #0080c6;
+}
+.right-search{
+  float: right;
+  width: 100%;
+  text-align: right;
+}
+#location{
+
+  background-position: 6px;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  padding:2px 0px 0px 25px ; 
 }

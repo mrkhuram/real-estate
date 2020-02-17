@@ -24,6 +24,9 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
+import {faPhoneAlt} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 
 const styles = theme =>({
@@ -35,7 +38,7 @@ const styles = theme =>({
   },
 });
 
-class Header extends React.Component{
+class HeaderP extends React.Component{
     state={
         isOpen: false,
         dropdownOpen: false,
@@ -142,7 +145,7 @@ class Header extends React.Component{
   
 
   return (
-    <div className='headerOuter'>
+    <div className='headerOuter '>
 
         <SwipeableDrawer
         open={this.state.left}
@@ -154,7 +157,7 @@ class Header extends React.Component{
       </SwipeableDrawer>
 
       <Navbar color="white" light expand="md"
-      className="navBar"
+      className="navBar secondHeader"
       style={{
         padding: 0
       }}
@@ -165,10 +168,10 @@ class Header extends React.Component{
         <NavbarBrand href="/" 
         className='navLogo'
         >
-            <img src={require('../assets/images/logo.png')} alt=""/>
+            <img src={require('../assets/images/second-logo.png')} alt=""/>
         </NavbarBrand>
         <Collapse isOpen={this.state.isOpen} navbar 
-        className='navList'
+        className='secondNavList'
         
         >
           <Nav  navbar>
@@ -182,6 +185,7 @@ class Header extends React.Component{
           >
               <DropdownToggle nav 
               onMouseOver={this.onMouseEnter}
+              className='secondBtn'
               >
               Home
               </DropdownToggle>
@@ -225,6 +229,7 @@ class Header extends React.Component{
             >
               <DropdownToggle nav
             onMouseOver={this.onMouseEnterPage} 
+            className='secondBtn'
 
               
               >
@@ -263,6 +268,7 @@ class Header extends React.Component{
             >
               <DropdownToggle nav
              onMouseOver={this.onMouseEnterProperties} 
+             className='secondBtn'
               
               >
                 Properties
@@ -311,6 +317,7 @@ class Header extends React.Component{
             >
               <DropdownToggle nav
              onMouseOver={this.onMouseEnterBlogs} 
+             className='secondBtn'
               
               >
                 Blogs
@@ -350,6 +357,7 @@ class Header extends React.Component{
             >
               <DropdownToggle nav
              onMouseOver={this.onMouseEnterAgents} 
+             className='secondBtn'
               
               >
                 Agents
@@ -371,7 +379,10 @@ class Header extends React.Component{
           <UncontrolledDropdown nav 
              className="agentsBtn navBtn"
             >
-              <DropdownToggle nav>
+              <DropdownToggle nav
+              className='secondBtn'
+              
+              >
                 Contact
               </DropdownToggle>
             
@@ -379,7 +390,9 @@ class Header extends React.Component{
 
                 
           </Nav>
-          <Button
+          
+        </Collapse>
+          {/* <Button
           className='addBtn btn-1'
           style={{
             color: 'white',
@@ -388,12 +401,29 @@ class Header extends React.Component{
             fontSize: 16,
             fontWeight: 500,
           }}
-          >Add Listing</Button>
-        </Collapse>
+          >Add Listing</Button> */}
+
+                <div class="header-right">
+                    <ul>
+                        <li>
+                            <a href="tel:+0128229058">
+                                {/* <i class="fa fa-phone"></i> */}
+                                <FontAwesomeIcon icon={faPhoneAlt} 
+                                style={{marginRight: 5,fontSize: 12}}
+                                />
+                                <span>+012.822.9058</span></a>
+                        </li>
+                        <li class="btn-2 btn-3">
+                            <a href="24-modernhaus-submit-properties.html">
+                                <span>add listing</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
       </Navbar>
     </div>
   );
 }
 }
 
-export default withStyles(styles)(Header);
+export default withStyles(styles)(HeaderP);

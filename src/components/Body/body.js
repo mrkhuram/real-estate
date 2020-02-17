@@ -287,8 +287,10 @@ export default function Pricing() {
               marginTop: 50
             }}
           >
-            <a href="#" class="text-uppercase"
-              className={classes.lookingToBuy}>
+            <a href="#" class="text-uppercase "
+              className={classes.lookingToBuy}
+              
+              >
               <span
 
               >looking to buy</span>
