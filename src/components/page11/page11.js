@@ -1,10 +1,11 @@
 import React from 'react';
 
-import HeaderP from './header'
+import HeaderP from '../page10/header'
 import Body from './Body';
-import Footer from './FooterP10'
+import Footer from '../page10/FooterP10'
 
-class Page10 extends React.Component {
+
+class Page11 extends React.Component {
 
   render() {
 
@@ -16,7 +17,6 @@ class Page10 extends React.Component {
       </div>
     );
   }
-
 }
 
-export default Page10;
+export default Page11

@@ -7,7 +7,7 @@ import {
 } from 'reactstrap';
 // import Container from '@material-ui/core/Container';
 
-import { faFacebookF,faYoutube,faTwitter,faLinkedin, faLinkedinIn, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookF,faYoutube,faTwitter, faLinkedinIn,  } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 

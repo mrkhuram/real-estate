@@ -1,11 +1,19 @@
 import React from 'react'
 import {
-    Row, Col
+    Row, Col, Container
 } from 'reactstrap'
+
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import PropertiesList from './propertiesP10'
+
+import './styles.css'
+
 export default class Body extends React.Component {
     render() {
         return (
             <div>
+                {/* Search Bar Start */}
                 <section class="search-bar section-padding index">
 
                     <Row>
@@ -16,7 +24,7 @@ export default class Body extends React.Component {
                                 <li>
                                     <input type="text" id="location" placeholder="Neighborhood, ZIP code or Listing ID" name="email" />
                                 </li>
-                                <li>
+                                <li className='li'>
                                     <select>
                                         <option value="Location">Location</option>
                                         <option value="Location">Location</option>
@@ -24,7 +32,7 @@ export default class Body extends React.Component {
                                         <option value="Location">Location</option>
                                     </select>
                                 </li>
-                                <li>
+                                <li className='li'>
                                     <select>
                                         <option value="Price range">Price range</option>
                                         <option value="Price range">Price range</option>
@@ -58,7 +66,9 @@ export default class Body extends React.Component {
                                 </li>
                                 <li>
                                     <button type="button" class="btn-1">
-                                        <span><i class="fa fa-search"></i> start search</span>
+                                        <span><FontAwesomeIcon icon={faSearch}
+                                            className='searchIconTwo'
+                                        /> start search</span>
                                     </button>
                                 </li>
                             </ul>
@@ -66,6 +76,40 @@ export default class Body extends React.Component {
                     </Row>
 
                 </section>
+
+                {/* Search Bar END */}
+
+                {/* Properties List END */}
+
+                <PropertiesList />
+
+                {/* Properties List END */}
+
+
+                {/* <!-- Subscribe Start --> */}
+                <section class="subscribe-wrapper bg3 reveal index">
+                    <Container>
+                        <Row>
+
+
+                            <Col
+                                xs='12' sm='12' md={{ size: 10, offset: 1 }}>
+                                <p>Get latest updates in your inbox</p>
+                                <div class="subscribe">
+                                    <input type="text" name="email" placeholder='Email Address' 
+                                    className='inputProperties'
+                                    />
+                                    <button class="btn-1 bg2 font1 inputProperties"><span>subscribe now !</span></button>
+                                </div>
+
+                            </Col>
+
+                        </Row>
+                    </Container>
+                </section>
+                {/* <!-- Subscribe End --> */}
+
+
             </div>
         )
     }

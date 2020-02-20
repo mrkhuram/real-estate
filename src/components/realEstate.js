@@ -13,10 +13,10 @@ class RealState extends React.Component {
 
     return (
       <div className="RealState">
-        {/* <Header />
+        <Header />
         <Body />
-        <Footer /> */}
-        <Page10 />
+        <Footer />
+
       </div>
     );
   }

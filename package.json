@@ -19,8 +19,10 @@
     "markdown-to-jsx": "^6.11.0",
     "material-ui-popup-state": "^1.5.3",
     "react": "^16.12.0",
+    "react-alice-carousel": "^1.17.3",
     "react-dom": "^16.12.0",
     "react-responsive-carousel": "^3.1.51",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.1",
     "reactstrap": "^8.4.1"
   },
@@ -33,6 +35,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "proxy": "http://localhost:6070",
   "browserslist": {
     "production": [
       ">0.2%",

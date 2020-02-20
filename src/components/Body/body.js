@@ -190,7 +190,7 @@ export default function Pricing() {
 
       >
         <Col sm='12' xs='12' md='12' lg='12'
-          className='carousel'
+          className='carouselHome'
         >
           <Row>
             <div className="inputOuter">
