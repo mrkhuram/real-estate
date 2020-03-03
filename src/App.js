@@ -6,6 +6,7 @@ import RealState from './components/realEstate';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import Page10 from './components/page10/page10'
 import Page11 from './components/page11/page11'
+import './components/assets/css/responsive.css'
 
 class App extends React.Component {
   

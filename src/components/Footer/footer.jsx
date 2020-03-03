@@ -90,7 +90,7 @@ class QuickLinks extends React.Component {
 
             </Row>
           </div>
-          <p class="copyright text-center"><i class="fa fa-copyright"></i> Copyright ModernHaus. All Rights Reserved. - 2018</p>
+          <p class="copyright text-center">© Copyright ModernHaus. All Rights Reserved. - 2018</p>
 
 
         </Container>

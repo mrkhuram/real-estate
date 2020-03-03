@@ -21,7 +21,8 @@ class FeatureProperties extends React.Component {
                < div style={{position: 'relative', zIndex: 6, backgroundColor: 'white',
                display:'inline-block',
                margin: 'auto',
-               padding: "50px 0px 100px 0px" 
+               padding: "50px 0px 100px 0px",
+               width: '100%'
         
                 }}>
                 <Row 

@@ -34,7 +34,7 @@ const styles = theme =>({
     width: 'auto',
   },
 });
-
+  
 class Header extends React.Component{
     state={
         isOpen: false,

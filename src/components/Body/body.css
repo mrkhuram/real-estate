@@ -101,6 +101,9 @@ figure:hover .overlay-1{
 .navBar{
   height: 100px;
   transition: all 400ms ease-in-out;
+  justify-content: normal !important;
+  /* margin-left: 5px; */
+  /* border: 1px solid white; */
 
 }
 .headerOuter{
@@ -144,16 +147,24 @@ figure:hover .overlay-1{
   margin-right: 10px !important;
 }
 
-@keyframes zoom{
-  0%{
-      transform: scale(1);
-      opacity: 1
-  }
-  100%{
-      transform: scale(1.2);
-      opacity: 0;
-  }
+.banner-slider li figure,
+.property-banner-slider li figure{
+    animation-name: zoom;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
 }
+@keyframes zoom{
+    0%{
+        transform: scale(1);
+        opacity: 1
+    }
+    100%{
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
 .carouselHome{
     background-image: url('../assets/images/home-page-banner.jpg');
     background-repeat: round;
@@ -169,11 +180,22 @@ figure:hover .overlay-1{
   background-color: white;
   margin: auto;
   width: 950px;
-  margin-top: 250px;
+  margin-top: -350px;
   display: flex;
   max-height: 200px;
+  position: relative;
+}
+.property-banner-slider-wrapper .property-banner-slider figure img,
+.banner-wrapper figure img,
+.banner-wrapper-1 figure img{
+    height: 600px;
+}
+.banner-slider {
+  background-color: #222222;
+}
 
-
+.banner-wrapper{
+  overflow: hidden;
 }
 .inputZip{
   margin: auto;
@@ -225,7 +247,7 @@ figure:hover .overlay-1{
   padding: 10px 10px;
   margin-top: 20px;
   height: 50px;
-  width: 130px;
+  width: 100%;
   background-color: #4ea94f;
   /* padding: 8px 0px; */
     border-radius: 0px;
@@ -1075,10 +1097,11 @@ body, button, input, select, textarea, code, kbd, pre, samp, .font-ar, .ui-accor
 
 
 .secondHeader{
-  background-color: #337ab7 !important;
+  background-color: #0080c6 !important;
   position: absolute;
   z-index: 3;
   width: 100%;
+  
 }
 .secondBtn{
   /* color: white !important; */
@@ -1376,4 +1399,8 @@ input::placeholder,select{
 }
 .p11BodyPadding {
   padding: 200px 0px 0px 0px;
+}
+
+img{
+  width: 100%;
 }

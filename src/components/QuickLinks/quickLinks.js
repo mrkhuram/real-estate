@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 class QuickLinks extends React.Component {
 
     addClass =()=>{
-        
+         
         
     }
     render() {
@@ -28,7 +28,7 @@ class QuickLinks extends React.Component {
                                 <li class="active" rel="tab1" >Popular Searches</li>
                                 <li rel="tab2">Rental Properties</li>
                                 <li rel="tab3">Apartments &amp; Units</li>
-                                <li rel="tab4">Commercial</li>
+                                <li rel="tab4">Commercial &nbsp; &nbsp;&nbsp;&nbsp;</li>
                             </ul>
                             <div class="tab_container">
                                 {/* <h6 class="d_active tab_drawer_heading" rel="tab1">Popular Searches</h6> */}

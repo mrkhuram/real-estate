@@ -59,7 +59,7 @@ class Properties extends React.Component {
                             <a href="#" class="link">Read more <FontAwesomeIcon icon={faAngleRight} className='i'/></a>
                             </div>
                         </Col>
-                        <Col xs='6' sm='6' md='4'>
+                        <Col xs='4' sm='4' md='4'>
                             <div class="featured-properties text-left">
                                 <figure class="featured-image">
                                     <a href="#">
@@ -75,7 +75,7 @@ class Properties extends React.Component {
                             <a href="#" class="link">Read more <FontAwesomeIcon icon={faAngleRight} className='i'/></a>
                             </div>
                         </Col>
-                        <Col xs='6' sm='6' md='4'>
+                        <Col xs='4' sm='4' md='4'>
                             <div class="featured-properties text-left">
                                 <figure class="featured-image">
                                     <a href="#">

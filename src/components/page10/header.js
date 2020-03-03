@@ -36,6 +36,9 @@ const styles = theme =>({
   fullList: {
     width: 'auto',
   },
+  drawer:{
+    color: 'white'
+  }
 });
 
 class HeaderP extends React.Component{
@@ -145,19 +148,20 @@ class HeaderP extends React.Component{
   
 
   return (
-    <div className='headerOuter '>
+    <div className='headerOuter headerP10 '>
 
         <SwipeableDrawer
         open={this.state.left}
         onClose={toggleDrawer('left', false)}
         onOpen={toggleDrawer('left', true)}
+        className={this.props.drawer}
       >
         {sideList('left')}
       
       </SwipeableDrawer>
 
       <Navbar color="white" light expand="md"
-      className="navBar secondHeader"
+      className="navBar secondHeader navbarP10"
       style={{
         padding: 0
       }}
@@ -403,7 +407,7 @@ class HeaderP extends React.Component{
           }}
           >Add Listing</Button> */}
 
-                <div class="header-right">
+                <div class="header-right page10Header">
                     <ul>
                         <li>
                             <a href="tel:+0128229058">

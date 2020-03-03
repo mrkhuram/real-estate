@@ -20,18 +20,7 @@ import QuickLinks from '../QuickLinks/quickLinks'
 import FeatureProperties from '../featureProperties/featureProperties'
 
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
+
 
 const useStyles = makeStyles(theme => ({
   '@global': {
@@ -182,7 +171,7 @@ export default function Pricing() {
   return (
     <React.Fragment>
 
-      <Row
+      {/* <Row
         style={{ margin: 0 ,
         position: 'relative',
         zIndex: 10
@@ -194,7 +183,7 @@ export default function Pricing() {
         >
           <Row>
             <div className="inputOuter">
-              <Col md='6' xs='8' sm='8'>
+              <Col md='6' xs='12' sm='12'>
                 <input type="text" className='inputZip'
                   placeholder='Neighborhood, ZIP code or Listing ID'
                 />
@@ -256,7 +245,95 @@ export default function Pricing() {
 
           </Row>
         </Col>
-      </Row>
+      </Row> */}
+
+      <section class="banner-wrapper index">
+        <ul class="banner-slider">
+          <li>
+            <figure>
+              <img src={require("../assets/images/home-page-banner.jpg")} alt="" />
+            </figure>
+            {/* <div class="overlay"></div> */}
+          </li>
+
+        </ul>
+
+        {/* <div class="banner-text text-center"> */}
+          <Container>
+
+
+            <Row className=''>
+              <div className="inputOuter">
+                <Col md='6' xs='12' sm='12'>
+                  <input type="text" className='inputZip'
+                    placeholder='Neighborhood, ZIP code or Listing ID'
+                  />
+                </Col>
+                <Col md='2' xs='12' sm='12'
+                  style={{
+                    padding: 0
+                  }}
+                >
+                  <select name="" id=""
+                    className='propertyType'
+                  >
+                    <option>
+                      Property Type
+                  </option>
+                    <option>
+                      Option 1
+                  </option><option>
+                      Option 2
+                  </option><option>
+                      Option 3
+                  </option><option>
+                      Option 4
+                  </option>
+                  </select>
+                </Col>
+                <Col md='2' xs='12' sm='12'
+                  style={{
+                    padding: 0
+                  }}
+                >
+                  <select name="" id=""
+                    className='priceRange'
+                  >
+                    <option>
+                      Price Range
+                  </option>
+                    <option>
+                      Option 1
+                  </option><option>
+                      Option 2
+                  </option><option>
+                      Option 3
+                  </option><option>
+                      Option 4
+                  </option>
+                  </select>
+                </Col>
+                <Col md='2' xs='12' sm='12' className="searchBtnOuter">
+                  <button
+                    className='searchBtn'
+                  >
+                    <FontAwesomeIcon icon={faSearch}
+                      className='searchIcon'
+                    />
+                    Search</button>
+                </Col>
+              </div>
+
+            </Row>
+
+
+          </Container>
+        {/* </div> */}
+      </section>
+
+
+
+
 
       <Row
         style={{ width: '100%', margin: 'auto', position: 'relative', zIndex: 4 }}
@@ -272,7 +349,8 @@ export default function Pricing() {
             style={{
               fontSize: 40,
               fontFamily: "'Muli', sans-serif",
-              fontWeight: 'bolder'
+              fontWeight: 'bolder',
+              color: 'white'
             }}
           >We Buy and Sell Homes</h1>
           <p
@@ -287,10 +365,10 @@ export default function Pricing() {
               marginTop: 50
             }}
           >
-            <a href="#" class="text-uppercase "
+            <a href="#" class="text-uppercase lookingBtn"
               className={classes.lookingToBuy}
-              
-              >
+
+            >
               <span
 
               >looking to buy</span>
@@ -301,7 +379,7 @@ export default function Pricing() {
               style={{ display: 'inline' }}
             >OR</p>
 
-            <a href="#" class="text-uppercase"
+            <a href="#" class="text-uppercase lookingBtn"
               className={classes.lookingToSell}
             >
               <span>looking to sell</span>
@@ -395,31 +473,6 @@ export default function Pricing() {
 
 
 
-      {/* Footer */}
-      {/* <Contain maxWidth="md" component="footer" className={classes.footer}>
-        <Grid container spacing={4} justify="space-evenly">
-          {footers.map(footer => (
-            <Grid item xs={6} sm={3} key={footer.title}>
-              <Typography variant="h6" color="textPrimary" gutterBottom>
-                {footer.title}
-              </Typography>
-              <ul>
-                {footer.description.map(item => (
-                  <li key={item}>
-                    <Link href="#" variant="subtitle1" color="textSecondary">
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </Grid>
-          ))}
-        </Grid>
-        <Box mt={5}>
-          <Copyright />
-        </Box>
-      </Contain> */}
-      {/* End footer */}
     </React.Fragment>
   );
 }

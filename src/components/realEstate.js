@@ -12,7 +12,7 @@ class RealState extends React.Component {
   render() {
 
     return (
-      <div className="RealState">
+      <div className="RealState">   
         <Header />
         <Body />
         <Footer />
